@@ -2,7 +2,11 @@
 
 一个轻量级安卓应用，实时显示设备的经纬度、海拔和速度信息，并自动记录移动轨迹。基于Kotlin+Jetpack合成构建。
 
-##✨  功能特性
+##📥  下载
+
+👉 [点射前往releases版面下载最新版apk](https://gitee.com/henmo/geocoords-test/releases)
+
+## ✨ 功能特性
 
 - **实时定位**：基于系统 GPS/网络定位服务，持续获取当前经纬度坐标
 - **海拔与速度**：显示当前海拔高度和移动速度，采用动态平滑算法——静止时消除抖动，快速移动时（如骑行、乘车）保持实时响应
@@ -23,10 +27,12 @@
 
 ## 📦 安装使用
 
+> ⚠️ 说明：本项目在 Yima IDE（移动端 IDE）中开发，当前仓库仅上传了核心源码文件（`MainActivity.kt`、`MapActivity.kt`、`AndroidManifest.xml`），尚未包含完整的 Gradle 工程配置文件（如 `build.gradle`、`themes.xml`、图标资源等）。如果只是想使用本应用，推荐直接从上方 Releases 下载 APK 安装；如果想基于源码编译，需要自行搭建标准 Android Studio 工程结构并补全上述配置文件。
+
 1.克隆本仓库
-2.使用Android Studio或兼容IDE打开项目
-3. 确保 `AndroidManifest.xml` 中已声明定位权限：
-   ```xml
+2.使用Android Studio或兼容IDE打开项目，并补全标准Gradle工程文件
+3.确保`AndroidManifest.xml` 中已声明定位权限：
+   ```XML
 <uses-permission android:name="android。许可。access_FINE_LOCATION"/>
 <uses-permission android:name="android。许可。access_COARSE_LOCATION"/>
    ```
@@ -36,9 +42,9 @@
 
 本应用仅在设备本地读取定位信息用于展示，**不会将坐标数据上传至任何服务器**，所有数据仅保存在应用运行时内存中。
 
-## 📄 [License](LICENSE)
+##📄 许可证
 
-本项目基于 Apache‑2.0 开源协议，仅供学习交流使用，可自由修改和分发。
+本项目基于[Apache许可证2.0](许可证) 开源协议。
 
 ##👤  作者
 
@@ -46,7 +52,7 @@
 
 ##🙏  特别鸣谢
 
-感谢 **Gemini**、**Claude**在开发过程中提供的协助与支持。
+感谢 **双子座**、**克劳德**在开发过程中提供的协助与支持。
 
 ---
 
